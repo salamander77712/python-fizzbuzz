@@ -1,0 +1,8 @@
+def fizzbuzz(length, mod1, mod2):
+    counter = 1
+    while counter <= length:
+        output = ""
+        if counter % mod1 == 0: output += "Fizz"
+        if counter % mod2 == 0: output += "Buzz"
+        print(counter) if output == "" else print(output)
+        counter += 1
